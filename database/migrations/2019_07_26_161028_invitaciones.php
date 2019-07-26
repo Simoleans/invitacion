@@ -24,6 +24,7 @@ class Invitaciones extends Migration
             $table->string('telefono');
             $table->string('rut');
             $table->unsignedInteger('invitar');
+            $table->bigInteger('codigo');
             $table->timestamps();
         });
     }

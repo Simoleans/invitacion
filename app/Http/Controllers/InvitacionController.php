@@ -27,7 +27,7 @@ class InvitacionController extends Controller
      */
     public function create()
     {
-        
+        return view('invitacion.create');
     }
 
     /**
@@ -41,7 +41,9 @@ class InvitacionController extends Controller
         //dump($request->all());
 
         $invitacion = new Invitacion;
+        $codigo=rand(11111, 99999).rand(11111, 99999).rand(11111, 99999);
         $invitacion->fill($request->all());
+        $invitacion->codigo = $codigo;
 
         if ($invitacion->save()) {
             //dd($invitacion);
@@ -70,7 +72,12 @@ class InvitacionController extends Controller
      */
     public function show($id)
     {
-        //
+        $invitacion = Invitacion::findOrfail($id);
+        $qr       = \QrCode::format('png')->size(300)->generate($invitacion->codigo);
+        $base64qr = base64_encode($qr);
+
+
+        return view('invitacion.view',['invitacion' => $invitacion,'qr' => $qr]);
     }
 
     /**
