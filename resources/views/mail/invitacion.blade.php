@@ -1,402 +1,760 @@
-<style  type="text/css">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>¡Invitación!</title>
+        
+    <style type="text/css">
+    p{
+      margin:10px 0;
+      padding:0;
+    }
+    table{
+      border-collapse:collapse;
+    }
+    h1,h2,h3,h4,h5,h6{
+      display:block;
+      margin:0;
+      padding:0;
+    }
+    img,a img{
+      border:0;
+      height:auto;
+      outline:none;
+      text-decoration:none;
+    }
+    body,#bodyTable,#bodyCell{
+      height:100%;
+      margin:0;
+      padding:0;
+      width:100%;
+    }
+    .mcnPreviewText{
+      display:none !important;
+    }
+    #outlook a{
+      padding:0;
+    }
+    img{
+      -ms-interpolation-mode:bicubic;
+    }
+    table{
+      mso-table-lspace:0pt;
+      mso-table-rspace:0pt;
+    }
+    .ReadMsgBody{
+      width:100%;
+    }
+    .ExternalClass{
+      width:100%;
+    }
+    p,a,li,td,blockquote{
+      mso-line-height-rule:exactly;
+    }
+    a[href^=tel],a[href^=sms]{
+      color:inherit;
+      cursor:default;
+      text-decoration:none;
+    }
+    p,a,li,td,body,table,blockquote{
+      -ms-text-size-adjust:100%;
+      -webkit-text-size-adjust:100%;
+    }
+    .ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.ExternalClass span,.ExternalClass font{
+      line-height:100%;
+    }
+    a[x-apple-data-detectors]{
+      color:inherit !important;
+      text-decoration:none !important;
+      font-size:inherit !important;
+      font-family:inherit !important;
+      font-weight:inherit !important;
+      line-height:inherit !important;
+    }
+    #bodyCell{
+      padding:10px;
+      border-top:1px inset ;
+    }
+    .templateContainer{
+      max-width:600px !important;
+    }
+    a.mcnButton{
+      display:block;
+    }
+    .mcnImage,.mcnRetinaImage{
+      vertical-align:bottom;
+    }
+    .mcnTextContent{
+      word-break:break-word;
+    }
+    .mcnTextContent img{
+      height:auto !important;
+    }
+    .mcnDividerBlock{
+      table-layout:fixed !important;
+    }
+ 
+    body,#bodyTable{
+     background-color:#FAFAFA;
+    }
+ 
+    #bodyCell{
+     border-top:1px inset ;
+    }
+  
+    .templateContainer{
+     border:0;
+    }
 
+    h1{
+     color:#202020;
+     font-family:Helvetica;
+     font-size:26px;
+     font-style:normal;
+     font-weight:bold;
+     line-height:125%;
+     letter-spacing:normal;
+     text-align:center;
+    }
 
-  .es-button {
-      mso-style-priority: 100 !important;
-      text-decoration: none !important;
-  }
+    h2{
+     color:#202020;
+     font-family:Helvetica;
+     font-size:22px;
+     font-style:normal;
+     font-weight:bold;
+     line-height:125%;
+     letter-spacing:normal;
+     text-align:left;
+    }
 
+    h3{
+     color:#202020;
+     font-family:Helvetica;
+     font-size:20px;
+     font-style:normal;
+     font-weight:bold;
+     line-height:125%;
+     letter-spacing:normal;
+     text-align:left;
+    }
 
-  .es-button-border:hover {
-      border-style: solid solid solid solid !important;
-      background: #d6a700 !important;
-      border-color: #42d159 #42d159 #42d159 #42d159 !important;
-  }
+    h4{
+     color:#202020;
+     font-family:Helvetica;
+     font-size:18px;
+     font-style:normal;
+     font-weight:bold;
+     line-height:125%;
+     letter-spacing:normal;
+     text-align:left;
+    }
 
-  .es-button-border:hover a.es-button {
-      background: #d6a700 !important;
-      border-color: #d6a700 !important;
-  }
+    #templatePreheader{
+     background-color:#222222;
+     background-image:none;
+     background-repeat:no-repeat;
+     background-position:center;
+     background-size:cover;
+     border-top:0;
+     border-bottom:0;
+     padding-top:9px;
+     padding-bottom:9px;
+    }
 
+    #templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+     color:#656565;
+     font-family:Helvetica;
+     font-size:12px;
+     line-height:150%;
+     text-align:left;
+    }
 
-  table tr {
-      border-collapse: collapse;
-  }
+    #templatePreheader .mcnTextContent a,#templatePreheader .mcnTextContent p a{
+     color:#656565;
+     font-weight:normal;
+     text-decoration:underline;
+    }
 
-  p,
-  hr {
-      Margin: 0;
-  }
+    #templateHeader{
+     background-color:#222222;
+     background-image:none;
+     background-repeat:no-repeat;
+     background-position:center;
+     background-size:cover;
+     border-top:0;
+     border-bottom:0;
+     padding-top:9px;
+     padding-bottom:0;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-      Margin: 0;
-      line-height: 120%;
-      mso-line-height-rule: exactly;
-      font-family: tahoma, verdana, segoe, sans-serif;
-  }
+    #templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+     color:#202020;
+     font-family:Helvetica;
+     font-size:16px;
+     line-height:150%;
+     text-align:left;
+    }
 
-  .es-left {
-      float: left;
-  }
+    #templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
+     color:#007C89;
+     font-weight:normal;
+     text-decoration:underline;
+    }
 
-  .es-right {
-      float: right;
-  }
+    #templateBody{
+     background-color:#222222;
+     background-image:none;
+     background-repeat:no-repeat;
+     background-position:center;
+     background-size:cover;
+     border-top:0;
+     border-bottom:2px solid #EAEAEA;
+     padding-top:0;
+     padding-bottom:9px;
+    }
 
-  .es-p5 {
-      padding: 5px;
-  }
+    #templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+     color:#202020;
+     font-family:Helvetica;
+     font-size:16px;
+     line-height:150%;
+     text-align:left;
+    }
 
-  .es-p5t {
-      padding-top: 5px;
-  }
+    #templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+     color:#007C89;
+     font-weight:normal;
+     text-decoration:underline;
+    }
 
-  .es-p5b {
-      padding-bottom: 5px;
-  }
+    #templateFooter{
+     background-color:#fafafa;
+     background-image:none;
+     background-repeat:no-repeat;
+     background-position:center;
+     background-size:cover;
+     border-top:0;
+     border-bottom:0;
+     padding-top:9px;
+     padding-bottom:9px;
+    }
 
-  .es-p5l {
-      padding-left: 5px;
-  }
+    #templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+     color:#656565;
+     font-family:Helvetica;
+     font-size:12px;
+     line-height:150%;
+     text-align:center;
+    }
 
-  .es-p5r {
-      padding-right: 5px;
-  }
+    #templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
+     color:#656565;
+     font-weight:normal;
+     text-decoration:underline;
+    }
+  @media only screen and (min-width:768px){
+    .templateContainer{
+      width:600px !important;
+    }
 
-  .es-p10 {
-      padding: 10px;
-  }
+} @media only screen and (max-width: 480px){
+    body,table,td,p,a,li,blockquote{
+      -webkit-text-size-adjust:none !important;
+    }
 
-  .es-p10t {
-      padding-top: 10px;
-  }
+} @media only screen and (max-width: 480px){
+    body{
+      width:100% !important;
+      min-width:100% !important;
+    }
 
-  .es-p10b {
-      padding-bottom: 10px;
-  }
+} @media only screen and (max-width: 480px){
+    #bodyCell{
+      padding-top:10px !important;
+    }
 
-  .es-p10l {
-      padding-left: 10px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnRetinaImage{
+      max-width:100% !important;
+    }
 
-  .es-p10r {
-      padding-right: 10px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnImage{
+      width:100% !important;
+    }
 
-  .es-p15 {
-      padding: 15px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCaptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCardRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImageCardRightImageContentContainer{
+      max-width:100% !important;
+      width:100% !important;
+    }
 
-  .es-p15t {
-      padding-top: 15px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnBoxedTextContentContainer{
+      min-width:100% !important;
+    }
 
-  .es-p15b {
-      padding-bottom: 15px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnImageGroupContent{
+      padding:9px !important;
+    }
 
-  .es-p15l {
-      padding-left: 15px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter .mcnTextContent{
+      padding-top:9px !important;
+    }
 
-  .es-p15r {
-      padding-right: 15px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent{
+      padding-top:18px !important;
+    }
 
-  .es-p20 {
-      padding: 20px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnImageCardBottomImageContent{
+      padding-bottom:9px !important;
+    }
 
-  .es-p20t {
-      padding-top: 20px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnImageGroupBlockInner{
+      padding-top:0 !important;
+      padding-bottom:0 !important;
+    }
 
-  .es-p20b {
-      padding-bottom: 20px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnImageGroupBlockOuter{
+      padding-top:9px !important;
+      padding-bottom:9px !important;
+    }
 
-  .es-p20l {
-      padding-left: 20px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnTextContent,.mcnBoxedTextContentColumn{
+      padding-right:18px !important;
+      padding-left:18px !important;
+    }
 
-  .es-p20r {
-      padding-right: 20px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+      padding-right:18px !important;
+      padding-bottom:0 !important;
+      padding-left:18px !important;
+    }
 
-  .es-p25 {
-      padding: 25px;
-  }
+} @media only screen and (max-width: 480px){
+    .mcpreview-image-uploader{
+      display:none !important;
+      width:100% !important;
+    }
 
-  .es-p25t {
-      padding-top: 25px;
-  }
+} @media only screen and (max-width: 480px){
 
-  .es-p25b {
-      padding-bottom: 25px;
-  }
+    h1{
+     font-size:22px !important;
+     line-height:125% !important;
+    }
 
-  .es-p25l {
-      padding-left: 25px;
-  }
+} @media only screen and (max-width: 480px){
 
-  .es-p25r {
-      padding-right: 25px;
-  }
+    h2{
+     font-size:20px !important;
+     line-height:125% !important;
+    }
 
-  .es-p30 {
-      padding: 30px;
-  }
+} @media only screen and (max-width: 480px){
 
-  .es-p30t {
-      padding-top: 30px;
-  }
+    h3{
+     font-size:18px !important;
+     line-height:125% !important;
+    }
 
-  .es-p30b {
-      padding-bottom: 30px;
-  }
+} @media only screen and (max-width: 480px){
+  
+    h4{
+     font-size:16px !important;
+     line-height:150% !important;
+    }
 
-  .es-p30l {
-      padding-left: 30px;
-  }
+} @media only screen and (max-width: 480px){
+ 
+    .mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContainer .mcnTextContent p{
+     font-size:14px !important;
+     line-height:150% !important;
+    }
 
-  .es-p30r {
-      padding-right: 30px;
-  }
+} @media only screen and (max-width: 480px){
 
+    #templatePreheader{
+     display:block !important;
+    }
 
-  a.es-button {
-      border-style: solid;
-      border-color: #ffc80a;
-      border-width: 10px 20px 10px 20px;
-      display: inline-block;
-      background: #ffc80a;
-      border-radius: 3px;
-      font-size: 18px;
-      font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 120%;
-      color: #ffffff;
-      text-decoration: none;
-      width: auto;
-      text-align: center;
-  }
+} @media only screen and (max-width: 480px){
+  
+    #templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+     font-size:14px !important;
+     line-height:150% !important;
+    }
 
-  .es-button-border {
-      border-style: solid solid solid solid;
-      border-color: #2cb543 #2cb543 #2cb543 #2cb543;
-      background: #ffc80a;
-      border-width: 0px 0px 0px 0px;
-      display: inline-block;
-      border-radius: 3px;
-      width: auto;
-  }
+} @media only screen and (max-width: 480px){
 
+    #templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+     font-size:16px !important;
+     line-height:150% !important;
+    }
 
+} @media only screen and (max-width: 480px){
 
-</style>
+    #templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+     font-size:16px !important;
+     line-height:150% !important;
+    }
 
-<!-- <link href="localhost/correo/css.css"
-      rel="stylesheet" type="text/css">
--->
+} @media only screen and (max-width: 480px){
 
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="title" content="Título de la WEB">
-    <meta name="description" content="Descripción de la WEB">
+    #templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+     font-size:14px !important;
+     line-height:150% !important;
+    }
 
-  </head>
-  <body >
-    <header>
-      <h1></h1>
-    </header>
+}</style></head>
+    <body>
+        <span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">Ver esta invitación</span><!--<![endif]-->
+       
+        <center>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+                <tr>
+                    <td align="center" valign="top" id="bodyCell">
+                        
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                            <tr>
+                                <td valign="top" id="templatePreheader"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
 
-<div id="rcorners" style=" border-radius: 8px; background-image:url('http://i68.tinypic.com/2yulfk7.jpg'); background-color: transparent; background-position: center top; background-repeat: no-repeat;  ">
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #CDAA38;">
+                        
+                            <h1 style="text-align: center;"><span style="color:#DAA520">Cena de aniversario</span></h1>
 
-<td class="esd-stripe esd-checked" align="center" bgcolor="transparent">
-    <table bgcolor="transparent" class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="border-width: 5px; border-style: solid; border-color: transparent; background-color: transparent;">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" id="templateHeader"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #CDAA38;">
+                        
+                            <h1 style="text-align: center;"><span style="color:#DAA520"><span style="font-size:36px">92°</span></span></h1>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" id="templateBody"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #CDAA38;">
+                        
+                            <table cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="530">
+      <table cellpadding="0" cellspacing="0" width="100%">
         <tbody>
-            <tr>
-                <td class="esd-structure es-p30t es-p15b es-p30r es-p30l" align="left" style="border-radius: 10px 10px 0px 0px; background-color: rgb(51, 51, 51); background-position: left top;" bgcolor="#333333">
-                    <table cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td width="530" class="esd-container-frame" align="center" valign="top">
-                                    <table cellpadding="0" cellspacing="0" width="100%" style="background-position: left bottom;">
-                                        <tbody>
-                                            <tr>
-                                                <td align="center" class="esd-block-text">
-                                                    <h1 style="color: #f1c232;">Cena de aniversario</h1>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" class="esd-block-text es-p20t">
-                                                    <p style="color: #f1c232; font-size: 50px;">92°</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="esd-structure es-p5t es-p5b es-p30r es-p30l" align="left" style="border-radius: 0px 0px 10px 10px; background-position: center bottom; background-color: rgb(51, 51, 51);" bgcolor="#333333">
-                    <table cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td width="530" class="esd-container-frame" align="center" valign="top">
-                                    <table cellpadding="0" cellspacing="0" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td class="esd-block-text">
-                                                    <p style="color: #f1c232; text-align: justify;">Rafael Montes Gonzalez, Presidente de la Camara de comercio, Industrias, servicios y turismo de iquique A.G y el Directorio lo saludan atentamente y tienen el agrado de invitar a usted a la cena de nuestro 92° aniversario.</p>
-                                                    <p style="color: #f1c232; text-align: justify;"><br></p>
-                                                    <p style="color: #f1c232; text-align: justify;">Esperamos contar con vuestra valiosa presencia, que dara realce a esta importante celebracion.</p>
-                                                    <ul></ul>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="530" class="esd-container-frame" align="center" valign="top">
-                                    <table cellpadding="0" cellspacing="0" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td align="center" class="esd-block-text">
-                                                    <h3 style="line-height: 150%; color: rgb(241, 194, 50);">Viernes 2 DE AGOSTO 2019</h3>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" class="esd-block-text">
-                                                    <h3 style="line-height: 150%; color: rgb(241, 194, 50);">20:30 PM</h3>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" class="esd-block-text">
-                                                    <h3 style="line-height: 150%; color: rgb(241, 194, 50);">Hotel Terrado suit</h3>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" class="esd-block-text">
-                                                    <h3 style="line-height: 150%;"><br></h3>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" class="esd-block-text">
-                                                    <h3 style="line-height: 150%; color: #f1c232;">Tenida Formal, Invitacion Valida para una persona S.C.R.: Hasta el 19 de Julio yreyes@ccii.cl</h3>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" class="esd-block-text">
-                                                    <h3 style="line-height: 150%;"><br></h3>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="es-m-p20b esd-container-frame" esd-custom-block-id="11088" width="530" align="left">
-                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="esd-block-button es-p10t es-p5r" width="50%" align="right">
-                                                                    <span class="es-button-border"> <a href class="es-button" target="_blank" style="border-left-width: 20px; border-right-width: 20px;">Aceptar</a> </span> </td>
-                                                                <td class="esd-block-button es-p10t es-p5l" width="50%" align="left">
-                                                                    <span class="es-button-border"> <a href class="es-button" target="_blank" style="border-left-width: 20px; border-right-width: 20px;">Invitar</a> </span> </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="es-m-p20b esd-container-frame" esd-custom-block-id="11085" width="530" align="left">
-                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                            <tr>
-                                                <td class="esd-block-text es-p10t" align="center">
-                                                    <h2 style="color: rgb(241, 194, 50);">Identificador QR</h2>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="esd-block-image" align="center">
-                                                    <a target="_blank"> <img src="{{asset('img/qr.png')}}" width="150" height="150"> </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td width="50%" align="left">
-                                                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td class="esd-block-text es-p5t es-p5b" esdev-links-color="#333333" align="center">
-                                                                                    <h1><br></h1>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td width="50%" align="left">
-                                                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td class="esd-block-text es-p10t es-p10b" esdev-links-color="#333333" align="center">
-                                                                                    <p><br></p>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
+          <tr>
+            <td>
+            <p style="text-align: justify;color: #CDAA38;"><span style="color:#DAA520">Rafael Montes Gonzalez, Presidente de la Camara de comercio, Industrias, servicios y turismo de iquique A.G y el Directorio lo saludan atentamente y tienen el agrado de invitar a usted a la cena de nuestro 92° aniversario.</span></p>
+
+            <p style="color: #CDAA38;">&nbsp;</p>
+
+            <p style="text-align: justify;color: #CDAA38;"><font color="#daa520">Esperamos contar con vuestra valiosa presencia, que dará&nbsp;realce a esta importante celebraciónon.</font></p>
+
+            <ul>
+            </ul>
+            </td>
+          </tr>
         </tbody>
-    </table>
-</td>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="530">
+      <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td align="center">
+            <h3 style="text-align: center;"><span style="color:#DAA520">Viernes 2 DE AGOSTO 2019</span></h3>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+            <h3 style="text-align: center;"><span style="color:#DAA520">20:30 PM</span></h3>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+            <h3 style="text-align: center;"><span style="color:#DAA520">Hotel Terrado suit</span></h3>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+            <h3>&nbsp;</h3>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+            <h3><font color="#daa520">Tenida Formal, Invitacion Valida para una persona S.C.R.: Hasta el 19 de Julio yreyes@ccii.cl</font></h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-</div>
+                        </td>
+                    </tr>
+                </tbody></table>
 
-<footer>
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+    <tbody class="mcnButtonBlockOuter">
+        <tr>
+            <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
+                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 9px;background-color: #FFD249;">
+                    <tbody>
+                        <tr>
+                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 18px;">
+                                <a class="mcnButton " title="Aceptar" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Aceptar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+    <tbody class="mcnButtonBlockOuter">
+        <tr>
+            <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
+                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 10px;background-color: #FFD249;">
+                    <tbody>
+                        <tr>
+                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 18px;">
+                                <a class="mcnButton " title="Invitar" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Invitar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
 
-  <div align="center">
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            <div style="text-align: center;"><span style="font-size:24px"><font color="#daa520"><img src="{{asset('qr/'.$invitacion->codigo.'.png')}}"></font></span></div>
 
+                        </td>
+                    </tr>
+                </tbody></table>
 
-      <p>Creado por: <a style="color: rgb(241, 194, 50); text-decoration: none;" href="https://veanx.cl">VeanX</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="" src="*|BRAND:LOGO|*" width="196" style="max-width:196px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width:100%;">
+    <tbody class="mcnFollowBlockOuter">
+        <tr>
+            <td align="center" valign="top" style="padding:9px" class="mcnFollowBlockInner">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentContainer" style="min-width:100%;">
+    <tbody><tr>
+        <td align="center" style="padding-left:9px;padding-right:9px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnFollowContent">
+                <tbody><tr>
+                    <td align="center" valign="top" style="padding-top:9px; padding-right:9px; padding-left:9px;">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0">
+                            <tbody><tr>
+                                <td align="center" valign="top">
+                                        
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+                                                <tbody><tr>
+                                                    <td valign="top" style="padding-right:10px; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                        <tbody><tr>
+                                                                            
+                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                    <a href="https://veanx.cl" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" alt="Web" style="display:block;" height="24" width="24" class=""></a>
+                                                                                </td>
+                                                                            
+                                                                            
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
 
-</div>
-    </footer>
-  </body>
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+                                                <tbody><tr>
+                                                    <td valign="top" style="padding-right:10px; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                        <tbody><tr>
+                                                                            
+                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                    <a href="https://www.facebook.com/veanxtechnology/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt="Facebook" style="display:block;" height="24" width="24" class=""></a>
+                                                                                </td>
+                                                                            
+                                                                            
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+   
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+                                                <tbody><tr>
+                                                    <td valign="top" style="padding-right:0; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                        <tbody><tr>
+                                                                            
+                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                    <a href="https://instagram.com/veanxtechnology/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-instagram-48.png" alt="Instagram" style="display:block;" height="24" width="24" class=""></a>
+                                                                                </td>
+                                                                            
+                                                                            
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            <div style="text-align: center;"><span style="color:#DAA520">Creado por: </span><a href="https://veanx.cl" target="_blank"><span style="color:#DAA520">VeanX</span></a></div>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" id="templateFooter"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+    <tbody class="mcnDividerBlockOuter">
+        <tr>
+            <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 10px 18px 25px;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EEEEEE;">
+                    <tbody><tr>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
 </html>

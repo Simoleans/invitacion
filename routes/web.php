@@ -28,4 +28,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     //Invitacion
     Route::resource('/invitacion', 'Invitacioncontroller');
+
+    //Escanear
+    Route::get('/escanear','EscanearController@index')->name('escanear.index');
+    Route::post('/escanear','EscanearController@buscar')->name('escanear.buscar');
 });

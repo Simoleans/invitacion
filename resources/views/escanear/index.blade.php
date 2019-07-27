@@ -2,6 +2,14 @@
 
 @section('content')
 
+<style type="text/css">
+  /*CSS*/ 
+video {
+  width: 100%;
+  max-height: 100%;
+}
+</style>
+
 <!--About section starts-->
 <section id="about">
   <div class="row">
@@ -10,7 +18,19 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <h5>Personal Information</h5>
+        </div>
+        <div class="card-content">
+          <div class="card-body">
+           <video id="preview"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
           <h5>Personal Information</h5>
@@ -63,7 +83,7 @@
                 </ul>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                 <img src="data:image/png;base64,{{ $invitacion->base64($invitacion->codigo) }}" class="img-responsive">
+                 
               </div>
             </div>
             <hr>
@@ -74,6 +94,38 @@
   </div>
 </section>
 <!--About section ends-->
+@endsection
 
+@section('script')
+<script type="text/javascript">
+      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+      scanner.addListener('scan', function (content) {
+        $.ajax({
+          url: '{{route("escanear.buscar")}}',
+          type: 'POST',
+          dataType: 'JSON',
+          data: {codigo: content,_token:"{{ csrf_token() }}"},
 
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
+        
+      });
+      Instascan.Camera.getCameras().then(function (cameras) {
+        if (cameras.length > 0) {
+          scanner.start(cameras[0]);
+        } else {
+          console.error('No cameras found.');
+        }
+      }).catch(function (e) {
+        console.error(e);
+      });
+    </script>
 @endsection

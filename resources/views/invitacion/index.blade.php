@@ -22,6 +22,7 @@
                   <th class="text-center">Telefono</th>
                   <th class="text-center">Empresa</th>
                   <th class="text-center">RUT</th>
+                  <th class="text-center">QR</th>
                   <th class="text-center">Accion</th>
                 </tr>
               </thead>
@@ -33,6 +34,7 @@
                   <td class="text-center">{{$i->telefono}}</td>
                   <td class="text-center">{{$i->empresa}}</td>
                   <td class="text-center">{{$i->rut}}</td>
+                  <td class="text-center"><img src="{{asset('qr/'.$i->codigo.'.png')}}" class="img-responsive"></td>
 	               	<td class="text-center">
 	               		<a href="{{route('invitacion.show',['id' => $i->id])}}" class="btn btn-raised btn-success btn-min-width mr-1 mb-1"><i class="fa fa-eye" title="Ver"></i></a>
 	               		<a href="{{route('invitacion.edit',['id' => $i->id])}}" class="btn btn-raised btn-warning btn-min-width mr-1 mb-1"><i class="fa fa-edit" title="Ver"></i></a>

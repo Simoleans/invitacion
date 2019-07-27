@@ -29,6 +29,8 @@
                   <li><a href="{{route('invitacion.create')}}" class="menu-item">Crear Invitacion</a>
                   </li>
                 </ul>
+                    <li><a href="{{route('escanear.index')}}"><i class="ft-file-text"></i><span data-i18n="" class="menu-title">Escanear</span></a>
+                  </li>
               </li>
               <!-- <li class=" nav-item"><a href="color-palette.html"><i class="ft-droplet"></i><span data-i18n="" class="menu-title">Menu</span></a>
               </li>

@@ -20,7 +20,7 @@ class InvitacionMail extends Mailable
 
     public $invitacion;
     
-    public function __construct($invitacion)
+    public function __construct(Invitacion $invitacion)
     {
          $this->invitacion = $invitacion;
     }

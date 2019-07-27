@@ -47,6 +47,9 @@ class InvitacionController extends Controller
 
         if ($invitacion->save()) {
             //dd($invitacion);
+             \QrCode::size(500)
+                ->format('png')
+                ->generate($codigo, public_path('qr/'.$invitacion->codigo.'.png'));
             \Mail::to($request->email)
             ->send(new InvitacionMail($invitacion));
 
