@@ -20,6 +20,13 @@ class InvitacionController extends Controller
         return view('invitacion.index',['invitaciones' => $invitaciones]);
     }
 
+    public function create_invitacion($id,$codigo,$email)
+    {
+        $invitacion= Invitacion::where('id',$id)->where('codigo',$codigo)->first();
+
+        return view('invitacion.invitar ',['invitacion' => $invitacion,'correo'=>$email]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -50,6 +57,7 @@ class InvitacionController extends Controller
              \QrCode::size(500)
                 ->format('png')
                 ->generate($codigo, public_path('qr/'.$invitacion->codigo.'.png'));
+
             \Mail::to($request->email)
             ->send(new InvitacionMail($invitacion));
 

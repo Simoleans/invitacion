@@ -570,7 +570,7 @@
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 18px;">
-                                <a class="mcnButton " title="Invitar" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Invitar</a>
+                                <a class="mcnButton " title="Invitar" href="{{route('create_invitacion',['id' => $invitacion->id,'codigo' => $invitacion->codigo,'correo' => $invitacion->email])}}" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Invitar</a>
                             </td>
                         </tr>
                     </tbody>

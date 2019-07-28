@@ -22,12 +22,14 @@ Route::post('auth', 'LoginController@login')->name('auth');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 Route::resource('/user', 'UserController');
 
+Route::get('/invitar/{id}/{codigo}/{correo}','Invitacioncontroller@create_invitacion')->name('create_invitacion');
 Route::group(['middleware' => 'auth'], function () {
     //middleware auth
     Route::get('/dashboard', 'LoginController@index')->name('dashboard');
 
     //Invitacion
     Route::resource('/invitacion', 'Invitacioncontroller');
+
 
     //Escanear
     Route::get('/escanear','EscanearController@index')->name('escanear.index');

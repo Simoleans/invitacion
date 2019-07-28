@@ -6,18 +6,18 @@
 <section id="about">
   <div class="row">
     <div class="col-12">
-      <div class="content-header">About</div>
+      <div class="content-header">Información de la invitación</div>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-12">
       <div class="card">
-        <div class="card-header">
-          <h5>Personal Information</h5>
-        </div>
+       <!--  <div class="card-header">
+          <h5>Información de la invitación</h5>
+        </div> -->
         <div class="card-content">
           <div class="card-body">
-            <div class="mb-3">
+           <!--  <div class="mb-3">
               <span class="text-bold-500 primary">About Me:</span>
               <span class="d-block overflow-hidden">Hi, I’m Jose, I’m 29 and I work as a Ninja Developer for the
                 “PIXINVENT” Creative Studio. In my research, I follow the flow of early medieval slavery from viking
@@ -27,38 +27,38 @@
                 a resource and an inspiration for others in similar pursuits.
                  
               </span>
-            </div>
+            </div> -->
             <hr>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4">
                 <ul class="no-list-style">
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="icon-present font-small-3"></i> Birthday:</a></span>
+                    <span class="text-bold-500 primary"><a><i class="ft-tag font-small-3"></i> invitado por:</a></span>
                     <span class="d-block overflow-hidden">June 10th, 1988</span>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-map-pin font-small-3"></i> Birthplace:</a></span>
-                    <span class="d-block overflow-hidden">New Jersey, USA</span>
+                    <span class="text-bold-500 primary"><a><i class="ft-user-check font-small-3"></i> Nombre:</a></span>
+                    <span class="d-block overflow-hidden">{{$invitacion->nombre}}</span>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-globe font-small-3"></i> Lives in:</a></span>
-                    <span class="d-block overflow-hidden">Denver, USA</span>
+                    <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Email:</a></span>
+                    <span class="d-block overflow-hidden">{{$invitacion->email}}</span>
                   </li>
                 </ul>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
                 <ul class="no-list-style">
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-user font-small-3"></i> Gender:</a></span>
-                    <span class="d-block overflow-hidden">Male</span>
+                    <span class="text-bold-500 primary"><a><i class="ft-trending-up font-small-3"></i> Empresa:</a></span>
+                    <span class="d-block overflow-hidden">{{$invitacion->empresa}}</span>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Email:</a></span>
-                    <a class="d-block overflow-hidden">jose@yourmail.com</a>
+                    <span class="text-bold-500 primary"><a><i class="ft-phone-forwarded font-small-3"></i> Telefono:</a></span>
+                    <a class="d-block overflow-hidden">{{$invitacion->telefono}}</a>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-monitor font-small-3"></i> Website:</a></span>
-                    <a class="d-block overflow-hidden">pixinvent.com</a>
+                    <span class="text-bold-500 primary"><a><i class="ft-user font-small-3"></i> RUT:</a></span>
+                    <a class="d-block overflow-hidden">{{$invitacion->rut}}</a>
                   </li>
                 </ul>
               </div>
