@@ -34,6 +34,20 @@
     <!-- END Page Level CSS-->
   </head>
   <!-- END : Head-->
+   <style type="text/css">
+
+@page {
+    size:A4 landscape;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+}
+
+
+  </style>
 
   <!-- BEGIN : Body-->
   <body data-col="1-column" class=" 1-column  layout-dark blank-page">
@@ -93,6 +107,10 @@
                                 </li>
                               </ul>
                             </div>
+                             <div class="col-6 col-md-6 col-lg-6">
+                              <a href="{{route('create_invitacion',['id' => $invitacion->id,'codigo' => $invitacion->codigo])}}" target="_blank" class="btn btn-success">Invitar</a>
+                            </div>
+                           
                           </div>
                         </div>
                       </div>
