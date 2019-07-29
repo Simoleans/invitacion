@@ -46,6 +46,14 @@
     -webkit-print-color-adjust: exact;
 }
 
+@media print
+{    
+    .print
+    {
+        display: none !important;
+    }
+}
+
 
   </style>
 
@@ -107,10 +115,9 @@
                                 </li>
                               </ul>
                             </div>
-                             <div class="col-6 col-md-6 col-lg-6">
-                              <a href="{{route('create_invitacion',['id' => $invitacion->id,'codigo' => $invitacion->codigo])}}" target="_blank" class="btn btn-success">Invitar</a>
+                             <div class="col-6 col-md-6 col-lg-6 offset-4">
+                              <a href="{{route('create_invitacion',['id' => $invitacion->id,'codigo' => $invitacion->codigo])}}" target="_blank" class="btn btn-success print">Invitar</a>
                             </div>
-                           
                           </div>
                         </div>
                       </div>
