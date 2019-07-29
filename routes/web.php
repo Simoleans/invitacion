@@ -22,17 +22,17 @@ Route::post('auth', 'LoginController@login')->name('auth');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 Route::resource('/user', 'UserController');
 
-Route::get('/invitar/{id}/{codigo}/{correo}','Invitacioncontroller@create_invitacion')->name('create_invitacion');
-Route::get('/invitarForm/{id}/{codigo}','Invitacioncontroller@show_invitacion')->name('show_invitacion');
-Route::post('/invitaForm','Invitacioncontroller@store_invitacion')->name('store_invitacion');
+Route::get('/invitar/{id}/{codigo}/{correo}','InvitacionController@create_invitacion')->name('create_invitacion');
+Route::get('/invitarForm/{id}/{codigo}','InvitacionController@show_invitacion')->name('show_invitacion');
+Route::post('/invitaForm','InvitacionController@store_invitacion')->name('store_invitacion');
 
-Route::post('/statusSend/{id}','Invitacioncontroller@status')->name('invitacion.status');
+Route::post('/statusSend/{id}','InvitacionController@status')->name('invitacion.status');
 Route::group(['middleware' => 'auth'], function () {
     //middleware auth
     Route::get('/dashboard', 'LoginController@index')->name('dashboard');
 
     //Invitacion
-    Route::resource('/invitacion', 'Invitacioncontroller');
+    Route::resource('/invitacion', 'InvitacionController');
 
 
     //Escanear

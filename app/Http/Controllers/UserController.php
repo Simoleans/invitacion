@@ -36,7 +36,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-
+       // dd($request->all());
         $this->validate($request, [
             'nombre'   => 'required',
             'email'    => 'required|email|unique:users',
@@ -48,12 +48,12 @@ class UserController extends Controller
         $user->password = bcrypt($request->input('password'));
 
         if ($user->save()) {
-            return redirect("/")->with([
+            return redirect("user")->with([
                 'flash_message' => 'Usuario agregado correctamente.',
                 'flash_class'   => 'alert-success',
             ]);
         } else {
-            return redirect("/")->with([
+            return redirect("user")->with([
                 'flash_message'   => 'Ha ocurrido un error.',
                 'flash_class'     => 'alert-danger',
                 'flash_important' => true,
