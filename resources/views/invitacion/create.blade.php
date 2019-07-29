@@ -13,6 +13,7 @@
         <form class="form" action="{{route('invitacion.store')}}" method="POST">
           @csrf
           <input type="hidden" name="user_id" value="{{Auth::user()->id}}">
+          <input type="hidden" name="etiqueta" value="1">
           <div class="form-body">
            <!--  <h4 class="form-section"><i class="ft-user"></i>Información Personal</h4> -->
            <hr>

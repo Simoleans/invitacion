@@ -9,7 +9,7 @@ class Invitacion extends Model
 	public $table= 'invitaciones';
 
      protected $fillable = [
-        'nombre', 'email', 'telefono','rut','invitar','empresa','user_id','codigo'
+        'nombre', 'email', 'telefono','rut','invitar','empresa','user_id','codigo','etiqueta'
     ];
 
     public function base64($dato){

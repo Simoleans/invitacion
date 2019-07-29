@@ -71,6 +71,10 @@
                                   <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Email:</a></span>
                                   <span class="d-block overflow-hidden">{{$invitacion->email}}</span>
                                 </li>
+                                 <li class="mb-2">
+                                  <span class="text-bold-500 primary"><a><i class="ft-tag font-small-3"></i> Etiqueta:</a></span>
+                                  <span class="d-block overflow-hidden">{{$etiqueta}}</span>
+                                </li>
                               </ul>
                             </div>
                             <div class="col-6 col-md-6 col-lg-6">

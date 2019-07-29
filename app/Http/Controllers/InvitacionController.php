@@ -127,15 +127,38 @@ class InvitacionController extends Controller
         $qr       = \QrCode::format('png')->size(300)->generate($invitacion->codigo);
         $base64qr = base64_encode($qr);
 
+        if ($invitacion->etiqueta == 1) {
+            $etiqueta = 'Gratis';
+        }
 
-        return view('invitacion.view',['invitacion' => $invitacion,'qr' => $qr]);
+        if ($invitacion->etiqueta == 2) {
+            $etiqueta = 'Por Pagar';
+        }
+
+        if ($invitacion->etiqueta == 3) {
+            $etiqueta = 'Pagado';
+        }
+
+        return view('invitacion.view',['invitacion' => $invitacion,'qr' => $qr,'etiqueta' => $etiqueta]);
     }
 
     public function show_invitacion($id,$codigo)
     {
         $invitacion = Invitacion::where('id',$id)->where('codigo',$codigo)->first();
 
-        return view('invitacion.imprimir',['invitacion' => $invitacion]);
+         if ($invitacion->etiqueta == 1) {
+            $etiqueta = 'Gratis';
+        }
+
+        if ($invitacion->etiqueta == 2) {
+            $etiqueta = 'Por Pagar';
+        }
+
+        if ($invitacion->etiqueta == 3) {
+            $etiqueta = 'Pagado';
+        }
+
+        return view('invitacion.imprimir',['invitacion' => $invitacion,'etiqueta']);
     }
 
     /**
@@ -158,7 +181,25 @@ class InvitacionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $invitacion = Invitacion::findOrfail($id);
+
+        $invitacion->etiqueta = 3;
+
+         if ($invitacion->save()) {
+        
+            return redirect("invitacion")->with([
+                'flash_message' => 'Invitación actualizada correctamente.',
+                'flash_class'   => 'alert-success',
+            ]);
+        } else {
+            return redirect("invitacion")->with([
+                'flash_message'   => 'Ha ocurrido un error.',
+                'flash_class'     => 'alert-danger',
+                'flash_important' => true,
+            ]);
+        }
+
+
     }
 
     public function status(Request $request)
@@ -181,5 +222,10 @@ class InvitacionController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function etiqueta($id)
+    {
+
     }
 }

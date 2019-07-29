@@ -26,6 +26,7 @@ class Invitaciones extends Migration
             $table->unsignedInteger('invitar');
             $table->bigInteger('codigo');
             $table->integer('status')->default(0)->comment('1 = aceptado , 0 = sin aceptar');
+            $table->integer('etiqueta')->comment('1 = gratiis , 2 = por pagar');
             $table->timestamps();
         });
     }

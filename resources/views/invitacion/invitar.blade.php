@@ -63,6 +63,7 @@
                                 <form class="form" action="{{route('store_invitacion')}}" method="POST">
                                   <input type="hidden" name="invitar" value="2">
                                   <input type="hidden" name="correo" value="{{$correo}}">
+                                  <input type="hidden" name="etiqueta" value="2">
                                   @csrf
                                   <div class="form-body">
                                    <!--  <h4 class="form-section"><i class="ft-user"></i>Información Personal</h4> -->
