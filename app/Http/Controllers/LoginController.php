@@ -15,7 +15,13 @@ class LoginController extends Controller
 
         $sinAceptar = Invitacion::where('status',0)->count();
 
-        return view('dashboard', ['users' => User::all(),'aceptadas' => $aceptadas,'sinAceptar' => $sinAceptar,'invitaciones' => Invitacion::all()]);
+        $pagadas = Invitacion::where('etiqueta',3)->count();
+
+        $gratis = Invitacion::where('etiqueta',1)->count();
+
+        $pagar = Invitacion::where('etiqueta',2)->count();
+
+        return view('dashboard', ['users' => User::all(),'aceptadas' => $aceptadas,'sinAceptar' => $sinAceptar,'invitaciones' => Invitacion::all(),'pagadas' => $pagadas,'gratis'=>$gratis,'pagar' => $pagar]);
     }
 
     public function login(Request $request)
