@@ -38,83 +38,63 @@
   <!-- BEGIN : Body-->
   <body data-col="1-column" class=" 1-column  layout-dark blank-page">
     <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <input id="url" type="hidden" name="url" value="{{route('invitacion.status',['id' => $invitacion->id])}}">
     <div class="wrapper">
       <div class="main-panel">
         <!-- BEGIN : Main Content-->
         <div class="main-content">
           <div class="content-wrapper"><!--Registration Page Starts-->
             <section id="regestration">
-              <div class="container-fluid">
-                <div class="row full-height-vh m-0">
+              <div class="row full-height-vh m-0">
                   <div class="col-12 d-flex align-items-center justify-content-center">
                     <div class="card">
                       <div class="card-content">
                         <div class="card-body register-img">
                           <div class="row m-0">
-                            <div class="col-lg-6 d-none d-lg-block py-2 text-center">
-                              <img src="{{asset('qr/'.$invitacion->codigo.'.png')}}" alt="" class="img-fluid mt-3 pl-3" width="400"
-                                height="230">
+                            <div class="col-lg-6 offset-1 py-2 text-center">
+                               <img src="data:image/png;base64,{{ $invitacion->base64($invitacion->codigo) }}" class="img-responsive" align="center">
+                            </div>   
+                          </div>
+                          <hr>
+                          <div class="row m-0">
+                            <div class="col-6 col-md-6 col-lg-6">
+                              <ul class="no-list-style">
+                                <li class="mb-2">
+                                  <span class="text-bold-500 primary"><a><i class="ft-tag font-small-3"></i> invitado por:</a></span>
+                                  <span class="d-block overflow-hidden">{{$invitacion->email_invitacion?$invitacion->email_invitacion:'N/T'}}</span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-bold-500 primary"><a><i class="ft-user-check font-small-3"></i> Nombre:</a></span>
+                                  <span class="d-block overflow-hidden">{{$invitacion->nombre}}</span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Email:</a></span>
+                                  <span class="d-block overflow-hidden">{{$invitacion->email}}</span>
+                                </li>
+                              </ul>
                             </div>
-                            <div class="col-lg-6 col-md-12 px-4 pt-3 bg-white">
-                              <h4 class="card-title mb-2">¡Estas siendo invitado!</h4>
-                              <p class="card-text mb-3">
-                                (*) Requeridos
-                              </p>
-                                <form class="form" action="{{route('invitacion.store')}}" method="POST">
-                                  @csrf
-                                  <div class="form-body">
-                                   <!--  <h4 class="form-section"><i class="ft-user"></i>Información Personal</h4> -->
-                                   <hr>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <div class="form-group">
-                                          <label for="projectinput1">Nombre*</label>
-                                          <input type="text" class="form-control" name="nombre" value="{{old('nombre')}}">
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <div class="form-group">
-                                          <label for="projectinput3">E-mail*</label>
-                                          <input type="text"  class="form-control" name="email">
-                                        </div>
-                                      </div>
-                                      <div class="col-md-12">
-                                        <div class="form-group">
-                                          <label for="projectinput3">Empresa*</label>
-                                          <input type="text"  class="form-control" name="empresa" value="{{old('empresa')}}">
-                                        </div>
-                                      </div>
-                                       <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label for="projectinput3">RUT*</label>
-                                          <input type="text"  class="form-control rut" name="rut" value="{{old('rut')}}">
-                                        </div>
-                                      </div>
-                                       <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label for="projectinput3">Telefono*</label>
-                                          <input type="text"  class="form-control" name="telefono" value="{{old('telefono')}}">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="form-actions">
-                                    <button type="submit" class="btn btn-raised btn-raised btn-primary">
-                                      <i class="fa fa-check-square-o"></i> Invitar
-                                    </button>
-                                  </div>
-                                </form>
-
-                                </div>
-                              </div>
+                            <div class="col-6 col-md-6 col-lg-6">
+                              <ul class="no-list-style">
+                                <li class="mb-2">
+                                  <span class="text-bold-500 primary"><a><i class="ft-trending-up font-small-3"></i> Empresa:</a></span>
+                                  <span class="d-block overflow-hidden">{{$invitacion->empresa}}</span>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-bold-500 primary"><a><i class="ft-phone-forwarded font-small-3"></i> Telefono:</a></span>
+                                  <a class="d-block overflow-hidden">{{$invitacion->telefono}}</a>
+                                </li>
+                                <li class="mb-2">
+                                  <span class="text-bold-500 primary"><a><i class="ft-user font-small-3"></i> RUT:</a></span>
+                                  <a class="d-block overflow-hidden">{{$invitacion->rut}}</a>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
                 </div>
               </div>
 
@@ -147,6 +127,29 @@
     <!-- END APEX JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <!-- END PAGE LEVEL JS-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        window.print();
+
+        var action = $("#url").val();
+        $.ajax({
+          url: action,
+          type: 'POST',
+          dataType: 'JSON',
+          data: {id: '{{$invitacion->id}}',_token:"{{ csrf_token() }}"},
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
+        
+      });
+    </script>
   </body>
   <!-- END : Body-->
 </html>

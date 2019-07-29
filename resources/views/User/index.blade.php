@@ -5,6 +5,7 @@
 <section id="ordering">
   <div class="row">
     <div class="col-12">
+      @include('partials.flash')
       <div class="card">
         <div class="card-header">
           <h4 class="card-title">Usuarios Registrados</h4>

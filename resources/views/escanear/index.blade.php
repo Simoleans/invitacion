@@ -14,7 +14,7 @@ video {
 <section id="about">
   <div class="row">
     <div class="col-12">
-      <div class="content-header">About</div>
+      <div class="content-header">Escaner</div>
     </div>
   </div>
   <div class="row">
@@ -33,57 +33,48 @@ video {
     <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
-          <h5>Personal Information</h5>
+          <h5>Datos</h5>
         </div>
         <div class="card-content">
           <div class="card-body">
-            <div class="mb-3">
-              <span class="text-bold-500 primary">About Me:</span>
-              <span class="d-block overflow-hidden">Hi, I’m Jose, I’m 29 and I work as a Ninja Developer for the
-                “PIXINVENT” Creative Studio. In my research, I follow the flow of early medieval slavery from viking
-                raids in the west, through the booming ports of the Scandinavian north, and out into the Islamic world.
-                Reading texts against the grain and seeing artifacts as traces of the past can make their lives once
-                again visible to us today. This website documents my efforts to do just that, and I hope it will prove
-                a resource and an inspiration for others in similar pursuits.
-                 
-              </span>
-            </div>
             <hr>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4">
                 <ul class="no-list-style">
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="icon-present font-small-3"></i> Birthday:</a></span>
-                    <span class="d-block overflow-hidden">June 10th, 1988</span>
+                    <span class="text-bold-500 primary"><a><i class="ft-tag font-small-3"></i> invitado por:</a></span>
+                    <span class="d-block overflow-hidden" id="invitado">-</span>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-map-pin font-small-3"></i> Birthplace:</a></span>
-                    <span class="d-block overflow-hidden">New Jersey, USA</span>
+                    <span class="text-bold-500 primary"><a><i class="ft-user-check font-small-3"></i> Nombre:</a></span>
+                    <span class="d-block overflow-hidden" id="nombre">-</span>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-globe font-small-3"></i> Lives in:</a></span>
-                    <span class="d-block overflow-hidden">Denver, USA</span>
+                    <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Email:</a></span>
+                    <span class="d-block overflow-hidden" id="email">-</span>
+                  </li>
+                   <li class="mb-2">
+                    <span class="text-bold-500 primary"><a><i class="ft-user font-small-3"></i> Estatus:</a></span>
+                    <a class="d-block overflow-hidden" id="estatus">-</a>
                   </li>
                 </ul>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
                 <ul class="no-list-style">
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-user font-small-3"></i> Gender:</a></span>
-                    <span class="d-block overflow-hidden">Male</span>
+                    <span class="text-bold-500 primary"><a><i class="ft-trending-up font-small-3"></i> Empresa:</a></span>
+                    <span class="d-block overflow-hidden" id="empresa">-</span>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Email:</a></span>
-                    <a class="d-block overflow-hidden">jose@yourmail.com</a>
+                    <span class="text-bold-500 primary"><a><i class="ft-phone-forwarded font-small-3"></i> Telefono:</a></span>
+                    <a class="d-block overflow-hidden" id="telefono">-</a>
                   </li>
                   <li class="mb-2">
-                    <span class="text-bold-500 primary"><a><i class="ft-monitor font-small-3"></i> Website:</a></span>
-                    <a class="d-block overflow-hidden">pixinvent.com</a>
+                    <span class="text-bold-500 primary"><a><i class="ft-user font-small-3"></i> RUT:</a></span>
+                    <a class="d-block overflow-hidden" id="rut">-</a>
                   </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
                  
+                </ul>
               </div>
             </div>
             <hr>
@@ -107,8 +98,25 @@ video {
           data: {codigo: content,_token:"{{ csrf_token() }}"},
 
         })
-        .done(function() {
-          console.log("success");
+        .done(function(data) {
+          if (data.status == 0) {
+            var status = 'Sin Aceptar'
+          }else{
+            var status = 'Aceptada';
+          }
+
+          if (data.email_invitacion) {
+            var invitado = data.email_invitacion;
+          }else{
+            var invitado = 'N/T';
+          }
+          $("#nombre").text(data.nombre);
+          $("#email").text(data.email);
+          $("#empresa").text(data.empresa);
+          $("#rut").text(data.rut);
+          $("#estatus").text(status);
+          $("#telefono").text(data.telefono);
+          $("#invitado").text(invitado);
         })
         .fail(function() {
           console.log("error");

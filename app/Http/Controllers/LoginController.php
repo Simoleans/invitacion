@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Invitacion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -10,7 +11,11 @@ class LoginController extends Controller
 {
     public function index()
     {
-        return view('dashboard', ['users' => User::all()]);
+        $aceptadas = Invitacion::where('status',1)->count();
+
+        $sinAceptar = Invitacion::where('status',0)->count();
+
+        return view('dashboard', ['users' => User::all(),'aceptadas' => $aceptadas,'sinAceptar' => $sinAceptar,'invitaciones' => Invitacion::all()]);
     }
 
     public function login(Request $request)

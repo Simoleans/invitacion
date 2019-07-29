@@ -36,7 +36,7 @@
               <a href="{{route('user.index')}}" class="btn btn-raised btn-raised btn-warning mr-1">
                  Volver
               </a>
-              <button type="button" class="btn btn-raised btn-raised btn-primary">
+              <button type="submit" class="btn btn-raised btn-raised btn-primary">
                 <i class="fa fa-check-square-o"></i> Guardar
               </button>
             </div>

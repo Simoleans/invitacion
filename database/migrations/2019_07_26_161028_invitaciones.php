@@ -25,6 +25,7 @@ class Invitaciones extends Migration
             $table->string('rut');
             $table->unsignedInteger('invitar');
             $table->bigInteger('codigo');
+            $table->integer('status')->default(0)->comment('1 = aceptado , 0 = sin aceptar');
             $table->timestamps();
         });
     }

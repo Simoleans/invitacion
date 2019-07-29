@@ -12,29 +12,15 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="card">
-       <!--  <div class="card-header">
-          <h5>Información de la invitación</h5>
-        </div> -->
         <div class="card-content">
           <div class="card-body">
-           <!--  <div class="mb-3">
-              <span class="text-bold-500 primary">About Me:</span>
-              <span class="d-block overflow-hidden">Hi, I’m Jose, I’m 29 and I work as a Ninja Developer for the
-                “PIXINVENT” Creative Studio. In my research, I follow the flow of early medieval slavery from viking
-                raids in the west, through the booming ports of the Scandinavian north, and out into the Islamic world.
-                Reading texts against the grain and seeing artifacts as traces of the past can make their lives once
-                again visible to us today. This website documents my efforts to do just that, and I hope it will prove
-                a resource and an inspiration for others in similar pursuits.
-                 
-              </span>
-            </div> -->
             <hr>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4">
                 <ul class="no-list-style">
                   <li class="mb-2">
                     <span class="text-bold-500 primary"><a><i class="ft-tag font-small-3"></i> invitado por:</a></span>
-                    <span class="d-block overflow-hidden">June 10th, 1988</span>
+                    <span class="d-block overflow-hidden">{{$invitacion->email_invitacion?$invitacion->email_invitacion:'N/T'}}</span>
                   </li>
                   <li class="mb-2">
                     <span class="text-bold-500 primary"><a><i class="ft-user-check font-small-3"></i> Nombre:</a></span>

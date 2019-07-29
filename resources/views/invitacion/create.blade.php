@@ -23,12 +23,6 @@
                   <input type="text" class="form-control" name="nombre" value="{{old('nombre')}}">
                 </div>
               </div>
-             <!--  <div class="col-md-6">
-                <div class="form-group">
-                  <label for="projectinput2">Last Name</label>
-                  <input type="text" id="projectinput2" class="form-control" name="lname">
-                </div>
-              </div> -->
             </div>
             <div class="row">
               <div class="col-md-12">

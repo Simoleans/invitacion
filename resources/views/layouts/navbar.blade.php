@@ -27,12 +27,12 @@
                 <li class="dropdown nav-item"><a id="dropdownBasic3" href="#" data-toggle="dropdown" class="nav-link position-relative dropdown-toggle"><i class="ft-user font-medium-3 blue-grey darken-4"></i>
                     <p class="d-none">User Settings</p></a>
                   <div ngbdropdownmenu="" aria-labelledby="dropdownBasic3" class="dropdown-menu text-left dropdown-menu-right">
-                    <a href="../../../html/html/ltr/chat.html" class="dropdown-item py-1"><i class="ft-message-square mr-2"></i><span>Chat</span></a>
+                    <!-- <a href="../../../html/html/ltr/chat.html" class="dropdown-item py-1"><i class="ft-message-square mr-2"></i><span>Chat</span></a>
                     <a href="../../../html/html/ltr/user-profile-page.html" class="dropdown-item py-1"><i class="ft-edit mr-2"></i><span>Edit Profile</span></a>
-                    <a href="../../../html/html/ltr/inbox.html" class="dropdown-item py-1"><i class="ft-mail mr-2"></i><span>My Inbox</span></a>
-                    <div class="dropdown-divider"></div>
+                    <a href="../../../html/html/ltr/inbox.html" class="dropdown-item py-1"><i class="ft-mail mr-2"></i><span>My Inbox</span></a> -->
+                    <!-- <div class="dropdown-divider"></div> -->
 
-                        <a href="{{ route('logout') }}" class="dropdown-item"><i class="ft-power mr-2"></i><span>Logout</span></a>
+                        <a href="{{ route('logout') }}" class="dropdown-item"><i class="ft-power mr-2"></i><span>Desconectarse</span></a>
 
                   </div>
                 </li>

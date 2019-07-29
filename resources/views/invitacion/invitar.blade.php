@@ -60,7 +60,9 @@
                               <p class="card-text mb-3">
                                 (*) Requeridos
                               </p>
-                                <form class="form" action="{{route('invitacion.store')}}" method="POST">
+                                <form class="form" action="{{route('store_invitacion')}}" method="POST">
+                                  <input type="hidden" name="invitar" value="2">
+                                  <input type="hidden" name="correo" value="{{$correo}}">
                                   @csrf
                                   <div class="form-body">
                                    <!--  <h4 class="form-section"><i class="ft-user"></i>Información Personal</h4> -->
@@ -144,9 +146,18 @@
     <script src="{{asset('app-assets/js/app-sidebar.js')}}" type="text/javascript"></script>
     <script src="{{asset('app-assets/js/notification-sidebar.js')}}" type="text/javascript"></script>
     <script src="{{asset('app-assets/js/customizer.js')}}" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.js"></script>
     <!-- END APEX JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <!-- END PAGE LEVEL JS-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".rut").inputmask({
+            mask: "9[9.999.999]-[9|K|k]",
+          });
+      });
+    </script>
   </body>
   <!-- END : Body-->
 </html>

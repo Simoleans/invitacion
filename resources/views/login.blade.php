@@ -88,11 +88,11 @@
                                   </div> -->
                                 </div>
                                 <div class="fg-actions d-flex justify-content-between">
-                                  <div class="login-btn">
+                                  <!-- <div class="login-btn">
 
                                       <a href="{{route('registrar.public')}}" class="btn btn-outline-primary">Registrar</a>
 
-                                  </div>
+                                  </div> -->
                                   <div class="recover-pass">
                                     <button class="btn  btn-outline-success" type="submit">
                                       Entrar

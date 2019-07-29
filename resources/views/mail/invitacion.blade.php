@@ -489,7 +489,7 @@
         <tbody>
           <tr>
             <td>
-            <p style="text-align: justify;color: #CDAA38;"><span style="color:#DAA520">Rafael Montes Gonzalez, Presidente de la Camara de comercio, Industrias, servicios y turismo de iquique A.G y el Directorio lo saludan atentamente y tienen el agrado de invitar a usted a la cena de nuestro 92° aniversario.</span></p>
+            <p style="text-align: justify;color: #CDAA38;"><span style="color:#DAA520"><strong>{{strtoupper($invitacion->nombre)}}</strong>, Presidente de <strong>{{strtoupper($invitacion->empresa)}}</strong> de RUT <strong>{{$invitacion->rut}}</strong>, telefono: <strong>{{$invitacion->telefono}}</strong> y el Directorio lo saludan atentamente y tienen el agrado de invitar a usted a la cena de nuestro 92° aniversario.</span></p>
 
             <p style="color: #CDAA38;">&nbsp;</p>
 
@@ -554,7 +554,7 @@
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 18px;">
-                                <a class="mcnButton " title="Aceptar" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Aceptar</a>
+                                <a class="mcnButton " title="Aceptar" href="{{route('show_invitacion',['id' => $invitacion->id,'codigo' => $invitacion->codigo])}}" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Aceptar</a>
                             </td>
                         </tr>
                     </tbody>

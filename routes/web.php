@@ -23,6 +23,10 @@ Route::get('/logout', 'LoginController@logout')->name('logout');
 Route::resource('/user', 'UserController');
 
 Route::get('/invitar/{id}/{codigo}/{correo}','Invitacioncontroller@create_invitacion')->name('create_invitacion');
+Route::get('/invitarForm/{id}/{codigo}','Invitacioncontroller@show_invitacion')->name('show_invitacion');
+Route::post('/invitaForm','Invitacioncontroller@store_invitacion')->name('store_invitacion');
+
+Route::post('/statusSend/{id}','Invitacioncontroller@status')->name('invitacion.status');
 Route::group(['middleware' => 'auth'], function () {
     //middleware auth
     Route::get('/dashboard', 'LoginController@index')->name('dashboard');
