@@ -468,6 +468,23 @@
             </td>
         </tr>
     </tbody>
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #CDAA38;">
+                        
+                             <p style="text-align: justify;color: #CDAA38;"><span style="color:#DAA520">Hola, <strong>{{$invitacion->nombre}}</strong></span></p>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
 </table></td>
                             </tr>
                             <tr>
@@ -488,8 +505,9 @@
       <table cellpadding="0" cellspacing="0" width="100%">
         <tbody>
           <tr>
+             
             <td>
-            <p style="text-align: justify;color: #CDAA38;"><span style="color:#DAA520"><strong>{{strtoupper($invitacion->nombre)}}</strong>, Presidente de <strong>{{strtoupper($invitacion->empresa)}}</strong> de RUT <strong>{{$invitacion->rut}}</strong>, telefono: <strong>{{$invitacion->telefono}}</strong> y el Directorio lo saludan atentamente y tienen el agrado de invitar a usted a la cena de nuestro 92° aniversario.</span></p>
+            <p style="text-align: justify;color: #CDAA38;"><span style="color:#DAA520">Rafael Montes Gonzalez, Presidente de la Camara de comercio, Industrias, servicios y turismo de iquique A.G y el Directorio lo saludan atentamente y tienen el agrado de invitar a usted a la cena de nuestro 92° aniversario.</span></p>
 
             <p style="color: #CDAA38;">&nbsp;</p>
 
@@ -588,7 +606,7 @@
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            <div style="text-align: center;"><span style="font-size:24px"><font color="#daa520"><img src="{{asset('qr/'.$invitacion->codigo.'.png')}}"></font></span></div>
+                            <div style="text-align: center;"><span style="font-size:24px"><font color="#daa520"><img src="{{asset('qr/'.$invitacion->codigo.'.png')}}" width="107" height="107"></font></span></div>
 
                         </td>
                     </tr>
