@@ -22,7 +22,7 @@ Route::post('auth', 'LoginController@login')->name('auth');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 Route::resource('/user', 'UserController');
 
-Route::get('/invitar/{id}/{codigo}/{correo}','InvitacionController@create_invitacion')->name('create_invitacion');
+Route::get('/invitar/{id}/{codigo}','InvitacionController@create_invitacion')->name('create_invitacion');
 Route::get('/invitarForm/{id}/{codigo}','InvitacionController@show_invitacion')->name('show_invitacion');
 Route::post('/invitaForm','InvitacionController@store_invitacion')->name('store_invitacion');
 

@@ -21,11 +21,11 @@ class InvitacionController extends Controller
         return view('invitacion.index',['invitaciones' => $invitaciones]);
     }
 
-    public function create_invitacion($id,$codigo,$email)
+    public function create_invitacion($id,$codigo)
     {
         $invitacion= Invitacion::where('id',$id)->where('codigo',$codigo)->first();
 
-        return view('invitacion.invitar ',['invitacion' => $invitacion,'correo'=>$email]);
+        return view('invitacion.invitar ',['invitacion' => $invitacion,'correo'=>$invitacion->mail]);
     }
 
     /**
@@ -59,7 +59,7 @@ class InvitacionController extends Controller
 
         if ($invitacion->save()) {
             //dd($invitacion);
-             \QrCode::size(500)
+             \QrCode::size(900)
                 ->format('png')
                 ->generate($codigo, public_path('qr/'.$invitacion->codigo.'.png'));
 
@@ -158,7 +158,7 @@ class InvitacionController extends Controller
             $etiqueta = 'Pagado';
         }
 
-        return view('invitacion.imprimir',['invitacion' => $invitacion,'etiqueta']);
+        return view('invitacion.imprimir',['invitacion' => $invitacion,'etiqueta'=>$etiqueta]);
     }
 
     /**
