@@ -51,7 +51,7 @@
               <span>Invitaciones Gratis</span>
             </div>
             <div class="media-right white text-right">
-              <i class="ft-alert-octagon"></i>
+              <i class="ft-check-circle "></i>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
               <span>Invitaciones Por Pagar</span>
             </div>
             <div class="media-right white text-right">
-              <i class="ft-check-circle"></i>
+              <i class="ft-alert-circle"></i>
             </div>
           </div>
         </div>
